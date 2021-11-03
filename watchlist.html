@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Master</title>
+    <link rel="stylesheet" href="style/watchlist.css">
+    <link rel="shortcut icon" type="image/jpg" href="./img/blockMaster.png"/>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <h1>Watchlist</h1>
+            <div class="camp">
+                <label for="name">Nombre película</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div class="camp">
+                <label for="genre">Género</label>
+                <input id="genre" name="genre" type="text">
+            </div>
+            <div class="camp">
+                <label for="id">Id</label>
+                <input id="id" name="id" type="text">
+            </div>
+            <div class="camp">
+                <button id="btnSendMovie" type="submit" class="btn-form">Guardar</button>
+            </div>
+            <div class="camp">
+                <button id="btnFindMovie" type="button" class="btn-form">Buscar</button>
+            </div>
+            <div class="camp">
+                <button id="btnEditMovie" type="button" class="btn-form">Editar</button>
+            </div>
+            <div class="camp">
+                <button id="btnDeleteMovie" type="button" class="btn-form">Eliminar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./script/watchlist.js"></script>
+</body>
+</html>

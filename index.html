@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./img/blockMaster.png"/>
+    <title>Block Master</title>
+</head>
+
+<body id="home">
+
+<!--Nav Bar-->    
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars"></i></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"></a><img class="blockMasterLogo" src="./img/blockMaster.png" alt="" width=100></li>
+                <li><a href="index.html"></a>Todas</li>
+                <li class="most"><a href="#"></a>Más valoradas</li>
+                <li class="least"><a href="#"></a>Menos valoradas</li>
+                <li><a href="watchlist.html"><i class="fas fa-film"></i></a></li>
+                <li>
+                    <div class="search-bar">
+                        <input class="input-search" placeholder="Busca tu película favorita">
+                        <button class="btn-search"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>
+                <li><a href="formulario.html"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Slider-->  
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider-section">
+                <img src="./img/mulan.jpg" alt="" class="slider-img">
+            </div>
+            <div class="slider-section">
+                <img src="./img/onward.jpg" alt="" class="slider-img">
+            </div>
+            <div class="slider-section">
+                <img src="./img/raya.jpg" alt="" class="slider-img">
+            </div>
+        </div>
+        <div class="slider-btn slider-btn--right" id="btn-right"> > </div>
+        <div class="slider-btn slider-btn--left" id="btn-left"> < </div> 
+        <div class="btns-slider">
+            <button class="btn-watch"><i class="fas fa-play"></i>VER AHORA</i></button>
+            <button class="btn-add"><i class="fas fa-plus"></i>VER DESPUÉS</i></button>
+        </div>
+    </div>
+    </div>
+
+<!--Catalogue-->  
+    <h3>Todas las películas</h3>
+
+    <div class="row" id="items"></div>
+
+    <template id="template-card">
+        <div class="card">
+            <img class="image" src="" alt="" width="50" />
+            <div class="clasification">
+                <i class="fas fa-star"></i>
+                <span class="rate"></span>
+            </div>
+        </div>
+    </template>
+
+    
+<!--Modal-->  
+
+<div id="modal" class="modal">
+    <span id="close" class="close">&times;</span>
+    <div class="modal-content"></div>
+    <div class="btns-modal">
+        <button class="btn-watch-modal"><i class="fas fa-play"></i>VER AHORA</i></button>
+        <button class="btn-add-modal"><i class="fas fa-plus"></i>VER DESPUÉS</i></button>
+    </div> 
+  </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>

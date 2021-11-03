@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Master</title>
+    <link rel="stylesheet" href="style/formulario.css">
+    <link rel="shortcut icon" type="image/jpg" href="./img/blockMaster.png"/>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <h1>Registro</h1>
+            <div class="camp">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <div class="camp">
+                <label for="lastName">Apellido</label>
+                <input id="lastName" name="lastName" type="text">
+            </div>
+            <div class="camp">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text">
+            </div>
+            <div class="camp">
+                <label for="id">Id</label>
+                <input id="id" name="id" type="text">
+            </div>
+            <div class="camp">
+                <button id="btnSend" type="submit" class="btn-form">Guardar</button>
+            </div>
+            <div class="camp">
+                <button id="btnFind" type="button" class="btn-form">Buscar por e-mail</button>
+            </div>
+            <div class="camp">
+                <button id="btnEdit" type="button" class="btn-form">Editar</button>
+            </div>
+            <div class="camp">
+                <button id="btnDelete" type="button" class="btn-form">Eliminar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./script/formulario.js"></script>
+</body>
+</html>
